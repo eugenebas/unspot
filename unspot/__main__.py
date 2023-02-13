@@ -30,7 +30,7 @@ if arguments.start_timestamp is None:
     arguments.start_timestamp = int(datetime.datetime(tomorrow.year,
                                                       tomorrow.month,
                                                       tomorrow.day,
-                                                      hour=10,
+                                                      hour=7,
                                                       minute=0,
                                                       second=0).timestamp())
 if arguments.end_timestamp is None:
