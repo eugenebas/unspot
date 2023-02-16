@@ -11,7 +11,7 @@ class Request:
         self._headers = {
             'accept': 'application/json, text/plain, */*',
             'accept-language': 'en',
-            'authorization': authorization_token,
+            'authorization': authorization_token if authorization_token.startswith('Bearer') else 'Bearer ' + authorization_token,
             'sec-ch-ua': '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
             'sec-ch-ua-mobile': '?0',
             'sec-ch-ua-platform': '"Linux"',
